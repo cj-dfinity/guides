@@ -1,3 +1,9 @@
 # Candid Guide
 
-sdf
+**What is Candid**
+sadasdadadasd
+
+**IDL and API**
+adsasdadasdasdasd
+
+## 
