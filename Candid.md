@@ -54,5 +54,18 @@ document.querySelector("form").addEventListener("submit", async (e) => {
 });
 ```
 
-sdf
+Two lines of code in this file is worth paying attention to, with regards to Candid. The first line is where the Candid service description is imported, and in this case it's actually not the hello.did file but the index.js file. The Candid index.js is automatically generated when the project is built, and imports the Motoko backend's services.
+
+```javascript
+import { hello } from "../../declarations/hello";
+```
+After importing the Candid interface we can now use the public backend service, which is illustrated in this line:
+
+```javascript
+const greeting = await hello.greet(name);
+```
+The update function `greet()` is called with the name as a parameter, which will update the current stored name, and return the hello-message. The call is asynchronous so an **await** is added so the frontend is waiting for a response before moving on. 
+
+A number of agents are developed by both DFINITY and the community to easily integrate the Candid interface in different programming languages. See the [documentation](https://internetcomputer.org/docs/current/developer-docs/build/agents/) for a list of the available agents.
+
 
