@@ -90,8 +90,19 @@ $ dfx canister call counter get
 For more information about how to call canisters from commandline, see the [documentation](https://internetcomputer.org/docs/current/references/cli-reference/dfx-canister).
 
 ### Candid UI
+While the commandline can be very practical, there's also an easier way to call the backend services, and that's by using the Candid UI. When a project is deployed, besides the Candid interfaces, an asset canister running the Candid UI is also deployed. The built process will show the URL in the console, but the URL can also be found in `counter/.dfx/local/canister_ids.json`:
 
-
+```json
+{
+  "__Candid_UI": {
+    "local": "qjdve-lqaaa-aaaaa-aaaeq-cai"
+  },
+  "counter": {
+    "local": "rkp4c-7iaaa-aaaaa-aaaca-cai"
+  }
+}
+```
+In this case the URL to the Candid UI is http://127.0.0.1:8080/?canisterId=qjdve-lqaaa-aaaaa-aaaeq-cai&id=rkp4c-7iaaa-aaaaa-aaaca-cai
 
 
 ### Motoko Playground
