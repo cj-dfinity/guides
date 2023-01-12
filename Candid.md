@@ -24,5 +24,5 @@ See more advanced uses of Candid in the [documentation](https://internetcomputer
 The Candid interface, as previously mentioned, allows inter-operation between services, and between services and frontends. Candid is also very useful for calling the public services from commandline, or using the Candid UI.
 
 ### Using Candid in frontend
-The [Counter example dapp](https://github.com/dfinity/examples/tree/master/motoko/counter) does not have a frontend, so let's build a frontend for the Counter, using Candid to access the public backend services. 
+The [Hello example dapp](https://github.com/dfinity/examples/tree/master/motoko/hello) has both a backend and a frontend, and the frontend imports the backend services through the Candid interface.
 
