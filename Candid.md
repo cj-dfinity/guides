@@ -71,6 +71,10 @@ A number of agents are developed by both DFINITY and the community to easily int
 ### Commandline
 The Candid interface also allows for calling backend services/functions from commandline. This is useful for admin functions that doesn't necessarily needs a frontend, or for testing the backend. If we go back to the [Counter example dapp](https://github.com/dfinity/examples/tree/master/motoko/counter), which didn't have a frontend, we can call `get()`, `set()` and `inc()` from commandline.
 
+```bash
+$ dfx canister call counter get
+(0 : nat)
+```
 
 ### Candid UI
 
