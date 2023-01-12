@@ -22,6 +22,9 @@ From the service description we can see, that the get() function returns a numbe
 
 See more advanced uses of Candid in the [documentation](https://internetcomputer.org/docs/current/developer-docs/build/candid/candid-concepts) or in other [Motoko examples](https://github.com/dfinity/examples/tree/master/motoko).
 
+## How to use the Candid interface
+The Candid interface, as previously mentioned, allows inter-operation between services, and between services and frontends. Candid is also very useful for calling the public services from commandline, or using the Candid UI.
 
-
+### Using Candid in frontend
+sdf - use 
 
