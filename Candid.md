@@ -24,5 +24,7 @@ See more advanced uses of Candid in the [documentation](https://internetcomputer
 The Candid interface, as previously mentioned, allows inter-operation between services, and between services and frontends. Candid is also very useful for calling the public services from commandline, or using the Candid UI.
 
 ### Using Candid in frontend
-The [Hello example dapp](https://github.com/dfinity/examples/tree/master/motoko/hello) has both a backend and a frontend, and the frontend imports the backend services through the Candid interface. The project's source folder (src) have three folders: `declarations`, `hello` (backend) and `hello_assets` (frontend). 
+The [Hello example dapp](https://github.com/dfinity/examples/tree/master/motoko/hello) has both a backend and a frontend, and the frontend imports the backend services through the Candid interface. The project's source folder (src) have three folders: `declarations`, `hello` (backend) and `hello_assets` (frontend). Let's examine the frontend's Javascript file located in `/src/hello_assets/src/index.js`:
+
+
 
