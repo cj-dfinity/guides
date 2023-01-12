@@ -68,4 +68,17 @@ The update function `greet()` is called with the name as a parameter, which will
 
 A number of agents are developed by both DFINITY and the community to easily integrate the Candid interface in different programming languages. See the [documentation](https://internetcomputer.org/docs/current/developer-docs/build/agents/) for a list of the available agents.
 
+### Commandline
+
+
+
+### Candid UI
+
+
+
+
+### Motoko Playground
+
+
+
 
