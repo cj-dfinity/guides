@@ -11,12 +11,20 @@ The Candid interface is automatically generated when building a Motoko project, 
 ```
 service : {
   get: () -> (nat) query;
-  inc: () -> ();
   set: (nat) -> ();
+  inc: () -> ();
 }
 ```
 
-sdf
+The Counter dapp has three public functions:
+
+- get()
+- set(nat)
+- inc()
+
+From the service description we can see, that the get() function returns a number, and the service is a query function (faster execution). The set takes a number as an argument, but doesn't return anything, and inc() doesn't take an argument and doesn't return anything. 
+
+See more advanced uses of Candid in the [documentation](https://internetcomputer.org/docs/current/developer-docs/build/candid/candid-concepts) or in other [Motoko examples](https://github.com/dfinity/examples/tree/master/motoko).
 
 
 
