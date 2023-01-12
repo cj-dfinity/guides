@@ -110,9 +110,15 @@ Simply click the **Call** and **Query** buttons, and see the response in the Out
 ### Motoko Playground
 For testing smaller code snippets, or test some ideas, [Motoko Playground](https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app) can be very useful. You can write Motoko code in the editor, and deploy it to canisters without goint through the steps of manually deploying the code to either the local or main net. All public functions/services can be tested with the built-in Candid UI. Test the [Motoko Playground](https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app) by selecting the Counter project and see the same Candid interface as in the examples above. 
 ![Motoko Playground](motoko_playground.png).
-
 ## Useful links
-
+These are some useful links:
+- [Internet Computer Documentation](https://internetcomputer.org/docs/current/developer-docs/ic-overview)
+- [Candid Documentation](https://internetcomputer.org/docs/current/developer-docs/build/candid/candid-intro)
+- [Motoko Documentation](https://internetcomputer.org/docs/current/developer-docs/build/cdks/motoko-dfinity/motoko)
+- [Agents](https://internetcomputer.org/docs/current/developer-docs/build/agents/)
+- [Example projects](https://github.com/dfinity/examples)
+- [Motoko Playground](https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app)
+- [DFX](https://internetcomputer.org/docs/current/references/cli-reference/)
 
 
 
