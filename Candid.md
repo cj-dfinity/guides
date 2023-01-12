@@ -108,9 +108,8 @@ Simply click the **Call** and **Query** buttons, and see the response in the Out
 ![Candid UI](candid_ui.png)
 
 ### Motoko Playground
-For testing smaller code snippets, or test some ideas, Motoko Playground can be very useful. You can write Motoko code in the editor, and deploy it to canisters without goint through the steps of manually deploying the code to either the local or main net. All public functions/services can be tested with the built-in Candid UI. Test the Motoko Playground by selecting the Counter project and see the same Candid interface as in the examples above. 
-
-
+For testing smaller code snippets, or test some ideas, [Motoko Playground](https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app) can be very useful. You can write Motoko code in the editor, and deploy it to canisters without goint through the steps of manually deploying the code to either the local or main net. All public functions/services can be tested with the built-in Candid UI. Test the [Motoko Playground](https://m7sm4-2iaaa-aaaab-qabra-cai.raw.ic0.app) by selecting the Counter project and see the same Candid interface as in the examples above. 
+![Motoko Playground](motoko_playground.png).
 
 ## Useful links
 
