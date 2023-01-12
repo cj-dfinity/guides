@@ -69,7 +69,7 @@ The update function `greet()` is called with the name as a parameter, which will
 A number of agents are developed by both DFINITY and the community to easily integrate the Candid interface in different programming languages. See the [documentation](https://internetcomputer.org/docs/current/developer-docs/build/agents/) for a list of the available agents.
 
 ### Commandline
-
+The Candid interface also allows for calling backend services/functions from commandline. This is useful for admin functions that doesn't necessarily needs a frontend, or for testing the backend. If we go back to the [Counter example dapp](https://github.com/dfinity/examples/tree/master/motoko/counter), which didn't have a frontend, we can call `get()`, `set()` and `inc()` from commandline.
 
 
 ### Candid UI
@@ -78,6 +78,9 @@ A number of agents are developed by both DFINITY and the community to easily int
 
 
 ### Motoko Playground
+
+
+## Useful links
 
 
 
