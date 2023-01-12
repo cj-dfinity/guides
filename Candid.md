@@ -106,7 +106,7 @@ In this case the URL to the Candid UI is http://127.0.0.1:8080/?canisterId=qjdve
 
 Simply click the **Call** and **Query** buttons, and see the response in the Output Log.
 
-
+![Candid UI](candid_ui.png)
 
 ### Motoko Playground
 
