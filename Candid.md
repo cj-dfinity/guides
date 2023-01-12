@@ -26,5 +26,33 @@ The Candid interface, as previously mentioned, allows inter-operation between se
 ### Using Candid in frontend
 The [Hello example dapp](https://github.com/dfinity/examples/tree/master/motoko/hello) has both a backend and a frontend, and the frontend imports the backend services through the Candid interface. The project's source folder (src) have three folders: `declarations`, `hello` (backend) and `hello_assets` (frontend). Let's examine the frontend's Javascript file located in `/src/hello_assets/src/index.js`:
 
+```javascript
+import { hello } from "../../declarations/hello";
 
+document.querySelector("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  document.getElementById("greeting").innerText = "";
+  const loader = document.getElementById("loader");
+
+  const button = e.target.querySelector("button");
+
+  const name = document.getElementById("name").value.toString();
+
+  loader.style.visibility = "visible";
+  button.setAttribute("disabled", true);
+  document.getElementById("name").setAttribute("disabled", true);
+
+  // Interact with foo actor, calling the greet method
+  const greeting = await hello.greet(name);
+
+  loader.style.visibility = "hidden";
+  button.removeAttribute("disabled");
+  document.getElementById("name").removeAttribute("disabled");
+  document.getElementById("greeting").innerText = greeting;
+
+  return false;
+});
+```
+
+sdf
 
