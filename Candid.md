@@ -75,6 +75,19 @@ The Candid interface also allows for calling backend services/functions from com
 $ dfx canister call counter get
 (0 : nat)
 ```
+```bash
+$ dfx canister call counter set '(1)'
+()
+$ dfx canister call counter get
+(1 : nat)
+```
+```bash
+$ dfx canister call counter inc
+()
+$ dfx canister call counter get
+(2 : nat)
+```
+For more information about how to call canisters from commandline, see the [documentation](https://internetcomputer.org/docs/current/references/cli-reference/dfx-canister).
 
 ### Candid UI
 
