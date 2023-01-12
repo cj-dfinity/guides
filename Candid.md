@@ -105,10 +105,11 @@ While the commandline can be very practical, there's also an easier way to call 
 In this case the URL to the Candid UI is http://127.0.0.1:8080/?canisterId=qjdve-lqaaa-aaaaa-aaaeq-cai&id=rkp4c-7iaaa-aaaaa-aaaca-cai
 
 Simply click the **Call** and **Query** buttons, and see the response in the Output Log.
-
 ![Candid UI](candid_ui.png)
 
 ### Motoko Playground
+For testing smaller code snippets, or test some ideas, Motoko Playground can be very useful. You can write Motoko code in the editor, and deploy it to canisters without goint through the steps of manually deploying the code to either the local or main net. All public functions/services can be tested with the built-in Candid UI. Test the Motoko Playground by selecting the Counter project and see the same Candid interface as in the examples above. 
+
 
 
 ## Useful links
