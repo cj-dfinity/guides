@@ -16,9 +16,7 @@ service : {
 }
 ```
 
-The Counter dapp has three public functions: `get()`, `set(nat)` and `inc()`
-
-From the service description we can see, that the get() function returns a number, and the service is a query function (faster execution). The set takes a number as an argument, but doesn't return anything, and inc() doesn't take an argument and doesn't return anything. 
+The Counter dapp has three public functions: `get()`, `set(nat)` and `inc()`. From the service description we can see, that the get() function returns a number, and the service is a query function (faster execution). The set takes a number as an argument, but doesn't return anything, and inc() doesn't take an argument and doesn't return anything. 
 
 See more advanced uses of Candid in the [documentation](https://internetcomputer.org/docs/current/developer-docs/build/candid/candid-concepts) or in other [Motoko examples](https://github.com/dfinity/examples/tree/master/motoko).
 
@@ -26,5 +24,5 @@ See more advanced uses of Candid in the [documentation](https://internetcomputer
 The Candid interface, as previously mentioned, allows inter-operation between services, and between services and frontends. Candid is also very useful for calling the public services from commandline, or using the Candid UI.
 
 ### Using Candid in frontend
-sdf - use 
+The [Counter example dapp](https://github.com/dfinity/examples/tree/master/motoko/counter) does not have a frontend, so let's build a frontend for the Counter, using Candid to access the public backend services. 
 
