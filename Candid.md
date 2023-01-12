@@ -1,11 +1,13 @@
 # Candid Guide
 
 ## What is Candid
-Candid is an interface describing the public services deployed in canisters on the Internet Computer. The Candid interface allows inter-operation between services, and between services and frontends, independently of the programming language used. The purpose of the Candid interface is similar to a REST API, but where APIs typically use JSON to exchange data, Candid is an *Interface Description Language (IDL)*.
+Candid is an interface describing the public services deployed in canisters on the Internet Computer. The Candid interface allows inter-operation between services, and between services and frontends, independently of the programming language used. The purpose of the Candid interface is similar to the purpose of a REST API, but where APIs typically use JSON to exchange data, Candid is an *Interface Description Language (IDL)*.
 
-**IDL**
+## IDL
+IDL is platform and programming language neutral, and descibes the service, data formats, data structures etc. 
 
-adsasdadasdasdasd
+
+
 
 ## ewer
 
