@@ -22,9 +22,38 @@ actor MyActor {
   };
 }
 ```
+The value of the variable `state` will persist an upgrade, and not be lost.
 
+### Non-stable types
+More complex data types like Hashmap are not stable types. This doesn't mean their values can't persist after an upgrade, it just means their persistance must be handled manually. Fortunately the functions `` and `` 
 
+```
+actor MyActor {
 
+  stable var entries : [(Text, Nat)] = [];
+
+  let map = HashMap.fromIter<Text,Nat>(
+    entries.vals(), 10, Text.equal, Text.hash);
+
+  public func register(name : Text) : async () {
+    switch (map.get(name)) {
+      case null  {
+        map.put(name, map.size());
+      };
+      case (?id) { };
+    }
+  };
+
+  system func preupgrade() {
+    entries := Iter.toArray(map.entries());
+  };
+
+  system func postupgrade() {
+    entries := [];
+  };
+}
+```
+This code snippet shows how the state of a HashMap can persist an upgrade, by serializing the state data before the upgrade (`preupgrade()`). On the initialization of the `map` variable after the upgrade, the serialized state is loaded. This way the HashMap data is made pesistent after a canister upgrade. 
 
 ## Candid changes
 
