@@ -55,17 +55,41 @@ actor MyActor {
 ```
 This code snippet shows how the state of a HashMap can persist an upgrade, by serializing the state data before the upgrade (`preupgrade()`). On the initialization of the `map` variable after the upgrade, the serialized state is loaded. This way the HashMap data is made pesistent after a canister upgrade. 
 
+
 ## Candid changes
+Changes to a Motoko function may change the Candid interface, and that could potentially break the application. So when upgrading the canister, consider how the changes can impact the Candid interface.
 
+### Small changes can have great impact
+Even small changes to the Motoko code can have great impact on the Candid interface, and potentially break the dapp. Consider this example:
 
+```
+actor {
+  stable var state : Int
+};
+```
+In this example the variable `state` is an Int, but let's say in an update the type is changed to Nat, which is not a big change. 
+```
+actor {
+  stable var state : Nat
+};
+```
+This would be a breaking change for e.g. the client application if it expects an Integer. With this small change, the Candid interface will change.
 
+## Data structure changes
+Another example of how data can be lost, is by changing the data types. 
 
-
-Braking changes
-
-
-
-
+```
+actor {
+  stable var state : Int
+};
+```
+In this example the variable `state` is an Int, but let's say in an update the type is changed to Text: 
+```
+actor {
+  stable var state : Text
+};
+```
+In this case the the current Int value will be lost. One way to avoid the data loss when changing the data types is to keep the original variable, and create a new variable for the new data type. This way the original data will not be lost due to canister upgrades
 
 
 
