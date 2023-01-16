@@ -57,10 +57,7 @@ This code snippet shows how the state of a HashMap can persist an upgrade, by se
 
 
 ## Candid changes
-Changes to a Motoko function may change the Candid interface, and that could potentially break the application. So when upgrading the canister, consider how the changes can impact the Candid interface.
-
-### Small changes can have great impact
-Even small changes to the Motoko code can have great impact on the Candid interface, and potentially break the dapp. Consider this example:
+Changes to a Motoko function may change the Candid interface, and that could potentially break the application. So when upgrading the canister, consider how the changes can impact the Candid interface. Even small changes to the Motoko code can have great impact on the Candid interface, and potentially break the dapp. Consider this example:
 
 ```
 actor {
