@@ -88,9 +88,13 @@ actor {
 ```
 In this case the the current Int value will be lost. One way to avoid the data loss when changing the data types is to keep the original variable, and create a new variable for the new data type. This way the original data will not be lost due to canister upgrades.
 
-
-
-
 ## Upgrade vs. Reinstall
 
-In some cases, 
+In some cases, especially for development, it may not be necessary to do a complete deploy of the code to test it. The DFX Reintall command will replace the code in the canister and delete all state data. Read more about Reinstalling canisters in the [documentation](https://internetcomputer.org/docs/current/developer-docs/build/project-setup/manage-canisters#reinstall-a-canister).
+
+
+## Useful links
+- [Verifying upgrade compatibility](https://internetcomputer.org/docs/current/developer-docs/build/cdks/motoko-dfinity/compatibility)
+- [Managing Canisters](https://internetcomputer.org/docs/current/developer-docs/build/project-setup/manage-canisters#upgrade-a-canister)
+- [Stable variables and upgrade methods](https://internetcomputer.org/docs/current/developer-docs/build/cdks/motoko-dfinity/upgrades)
+- [Reinstall canisters](https://internetcomputer.org/docs/current/developer-docs/build/project-setup/manage-canisters#reinstall-a-canister)
