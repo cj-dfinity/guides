@@ -6,7 +6,8 @@ Upgrading a canister is a common task, when code is updated and deployed, the ca
 - Could the upgrade break the dapp due to Candid changes?
 
 ## Preserving state (data)
-asdasdasd
+When a canister is upgraded, the state is lost by default. This means all data application data will be lost, unless it's handled to persist when the canister is upgraded. This can be achieved by storing the data in stable variables, which will persist upgrades.
+
 
 
 
