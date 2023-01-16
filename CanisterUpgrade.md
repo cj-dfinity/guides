@@ -6,6 +6,9 @@ Upgrading a canister is a common task, when code is updated and deployed, the ca
 - Could the upgrade break the dapp due to Candid changes?
 
 ## Preserving state (data)
+asdasdasd
+
+
 
 
 ## Candid changes
