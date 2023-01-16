@@ -89,7 +89,7 @@ actor {
   stable var state : Text
 };
 ```
-In this case the the current Int value will be lost. One way to avoid the data loss when changing the data types is to keep the original variable, and create a new variable for the new data type. This way the original data will not be lost due to canister upgrades
+In this case the the current Int value will be lost. One way to avoid the data loss when changing the data types is to keep the original variable, and create a new variable for the new data type. This way the original data will not be lost due to canister upgrades.
 
 
 
